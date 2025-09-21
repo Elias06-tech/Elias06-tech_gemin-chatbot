@@ -1,100 +1,88 @@
 # Google Colab Gemini Chatbot
 
-A powerful AI chatbot built with Google's Gemini AI, designed to run in Google Colab with secure API key management.
+A powerful AI chatbot built with Google's Gemini AI, designed for Google Colab with secure API key management.
 
-## Features
+## 🌟 Features
 
-- 🤖 Interactive chatbot with conversation memory
-- 🎭 Customizable AI personalities
-- 📜 Chat history tracking
-- 🔧 Multiple chatbot modes (basic and enhanced)
-- 🛡️ Secure API key management
-- ⚡ Easy setup in Google Colab
+- Interactive chatbot with conversation memory
+- Customizable AI personalities
+- Chat history tracking
+- Multiple chatbot modes (basic and enhanced)
+- Secure API key management
+- Comprehensive error handling and troubleshooting
 
-## Quick Start
+## 🚀 Quick Start
 
-- Go to [Google AI Studio](https://makersuite.google.com/app/apikey)
+### 1. Get Your API Key
+- Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
 - Create a new API key
-- Copy the API key (starts with 'AIza')
+- Copy the key (starts with 'AIza')
 
-
+### 2. Run in Google Colab
 1. Open [Google Colab](https://colab.research.google.com/)
-2. Upload the notebook file
-3. Run the code - it will guide you through setup
+2. Upload the chatbot.ipynb file
+3. Run all cells
+4. Enter your API key when prompted
+
+### 3. Start Chatting
+python
+# Try these commands:
+run_enhanced_chatbot()        # Full-featured chatbot
+ask_gemini("Hello there!")    # Single question
 
 
-The code will automatically prompt you to enter your API key and create the necessary configuration files.
+## 📋 Available Functions
 
-## Available Functions
+| Function | Description |
+|----------|-------------|
+| run_enhanced_chatbot() | Interactive chat with personalities |
+| run_chatbot() | Basic chatbot mode |
+| ask_gemini(question) | Single question function |
+| diagnose_api_issue() | Troubleshoot API problems |
+| test_simple_request() | Test API connectivity |
 
-### Basic Usage
-```python
-# Single question
-print(ask_gemini("What is machine learning?"))
+## 🎭 Chatbot Commands
 
-# Start basic chatbot
-run_chatbot()
+While chatting, use these commands:
+- quit, exit, bye - End conversation
+- history - Show chat history
+- clear - Clear screen
+- personality [description] - Set AI personality
+- help - Show help message
 
-# Start enhanced chatbot with personalities
-run_enhanced_chatbot()
-```
+## 🔒 Security
 
-### Troubleshooting
-```python
-# Check API setup
-diagnose_api_issue()
+This project uses environment variables to protect your API key:
+- API keys stored in .env files (not tracked by Git)
+- No hardcoded secrets in source code
+- .gitignore prevents accidental key exposure
 
-# Test models
-test_simple_request()
+## 🛠️ Troubleshooting
 
-# Check available models
-list_available_models()
-```
+*Common Issues:*
+1. *API Key Error*: Ensure key starts with 'AIza' and is from Google AI Studio
+2. *Model Not Found*: Run test_simple_request() to find working models
+3. *500 Errors*: Usually temporary - try different model or restart
 
-## Chatbot Commands
-
-While chatting, you can use these commands:
-- `quit`, `exit`, `bye` - End conversation
-- `history` - Show chat history
-- `clear` - Clear screen
-- `personality [description]` - Set AI personality
-- `help` - Show help message
-
-## Security
-
-This project uses environment variables to keep your API key secure:
-- API keys are stored in `.env` file (not tracked by Git)
-- Never hardcode API keys in source code
-- `.gitignore` prevents accidental key exposure
-
-## Requirements
-
-- Google Colab account
-- Google AI Studio API key
-- Internet connection
-
-## Troubleshooting
-
-### Common Issues:
-1. **API Key Errors**: Make sure your key starts with 'AIza'
-2. **Model Not Found**: Run `test_simple_request()` to find working models
-3. **500 Errors**: Usually temporary, try again or use different model
-
-### Getting Help:
-- Run `fix_common_issues()` for guided troubleshooting
+*Getting Help:*
+- Run fix_common_issues() for guided troubleshooting
 - Check that your API key is from Google AI Studio (not Google Cloud)
 
-## Contributing
+## 🤝 Contributing
 
 1. Fork the repository
 2. Create your feature branch
-3. Make sure to test with your own API key
+3. Test with your own API key
 4. Submit a pull request
 
-## License
+## 📄 License
 
 MIT License - feel free to use and modify!
 
-## Disclaimer
+## ⚠️ Disclaimer
 
-This project is for educational purposes. Keep your API keys secure and monitor your usage to avoid unexpected charges.
+Educational project. Keep API keys secure and monitor usage to avoid unexpected charges.
+
+---
+
+*Made with ❤️ using Google's Gemini AI*
